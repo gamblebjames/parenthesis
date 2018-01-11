@@ -41,7 +41,7 @@ int main(
 char *get_input() 
 {
 	char	*buf;
-	int		too_long = 0;
+	int	too_long = 0;
 	
 	if((buf = (char *)malloc(100)) == NULL) {
 		perror("Failed to allocate memory");
@@ -74,9 +74,9 @@ char *get_input()
 bool check_string(
 	char *buf)
 {
-	int		begin_paren = 0, end_paren = 0;
-	int		*begin_index, *end_index;
-	int		len = strlen(buf);
+	int	begin_paren = 0, end_paren = 0;
+	int	*begin_index, *end_index;
+	int	len = strlen(buf);
 	bool	check = true;
 
 	if((begin_index = (int *)malloc(sizeof(int))) == NULL) {
